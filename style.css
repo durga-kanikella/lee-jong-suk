@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
     width: 100%;
@@ -13,6 +14,7 @@
     height: 40px;
     display: flex;
     justify-content:space-between;
+    position: fixed;
 }
 .logo{
     width: 25%;
@@ -33,20 +35,26 @@
     justify-content: space-between;
     line-height: 40px;
     color: hsl(188,39%,83%);
+    
 }
 .nav-links{
     cursor: pointer;
-    width: 25%;
+    width: 40%;
     height: 40px;
     text-align: center;
 }
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
 .nav-links:hover{
-    background-color:hsl(188,39%,83%);
+    background-color:rgb(107, 161, 170);
     color: black;
+    
 }
 .content-box{
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-image:url(images/lee-jong-suk-bg-img.jpg);
     background-size:cover;
     background-position:center; 
@@ -56,7 +64,7 @@
     font-weight: bold;
     padding-top: 200px;
     padding-left: 80px;
-    padding-right: ;
+   
 }
 .content-box button{
     padding: 8px;
@@ -74,8 +82,9 @@
 }
 .card-container{
     width: 100%;
-    height: 120vh;
+    height: 135vh;
     background-image:linear-gradient(to right,hsl(51,17%,91%),hsl(208,35%,51%));
+    
 }
 .cards-box{
     height: 400px;  
@@ -83,9 +92,15 @@
     text-align: center;
     width: 80%;
     margin: auto;
+    
 }
-.cards-box h3{
+.cards-box h2{
     font-weight: 1000;
+   
+}
+#my-dramas{
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 .cards{
     height: 300px;
@@ -116,20 +131,20 @@
 .card1{
     height: 300px;
     background-size: cover;
-    background-image: url(images/w\ world.jfif);
+    background-image: url(https://c1.staticflickr.com/8/7297/27888971520_559ab03542_o.jpg);
 }
 .card2{
-    background-image: url(images/while\ you\ were\ sleeping.jpg);
+    background-image: url(https://i.pinimg.com/originals/f7/49/7d/f7497d3f48e1dfa593cd9e014211dc0a.jpg);
     background-size:cover;
     background-position:center;
 }
 .card3{
-    background-image: url(images/i\ hear\ your\ voice.jpg);
+    background-image: url(https://media.senscritique.com/media/000006549524/source_big/I_Hear_Your_Voice.jpg);
     background-size:cover;
     background-position:top;
 }
 .card4{
-    background-image: url(images/school.jfif);
+    background-image: url(https://wlext.is/wp-content/uploads/2020/07/School-2013-Korean-Drama-Series-HD-Streaming-with-English-Subtitles.jpg);
     background-size:cover;
     background-position:center;
 }
@@ -139,22 +154,22 @@
     background-position:center;
 }
 .card6{
-    background-image: url(images/pinocchio.jpg);
+    background-image: url(https://s-media-cache-ak0.pinimg.com/564x/a0/53/0f/a0530f37f4f67ec2a6284c17ac0eac7d.jpg);
     background-size:cover;
     background-position:top;
 }
 .card7{
-    background-image: url(images/romance\ is\ a\ bonus\ book.jpg.jfif);
+    background-image: url(https://th.bing.com/th/id/OIP.zpcPa7uu-QO71XcDNsd3ogHaHa?pid=ImgDet&w=154.46584938704027&h=179.99999999999997&c=7&dpr=1.5);
     background-size:cover;
     background-position:top;
 }
 .card8{
-    background-image: url(images/7\ first\ kisses.jfif);
+    background-image: url(https://th.bing.com/th/id/OIP.cOzBlG40T1OTBRAV2f2I9AHaK0?pid=ImgDet&rs=1);
     background-size:cover;
     background-position:top;
 }
 .card-content h2{
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 5px;
 }
 .card-content p{
@@ -176,3 +191,72 @@
     text-align: center;
     padding-top:100px;  
 }
+.about{
+    background-image: linear-gradient(to right,hsl(13,35%,85%),hsl(282,39%,70%));
+    height: 100%;
+    
+}
+.about h1{
+    text-align: center;
+    padding-top: 50px;
+}
+.about-content{
+    width: 80%;
+    margin: auto;
+    text-align:justify;
+}
+footer{
+    font-size: small;
+    color:black;
+    text-align: center;
+    margin-top: 32px;
+}
+
+
+
+
+/* media queries */
+@media screen and (max-width: 700px) {
+    .card{
+        width: 100%;
+    }
+    .card-container{
+        height:430vh ;
+    }
+    .logo{
+        width: 35%;
+        font-size: 16px;
+    }
+   
+    .content-box button{
+     
+      
+      margin-top: 620px;
+      width: 60%;
+      margin-left: 75px;
+    }
+    footer{
+        margin-top: 80px;
+        
+    }
+    .about{
+        height: 100%;
+        
+    }
+    .nav
+    {
+        width: 60%;
+        font-size: 12px;
+        
+    }
+    .content-box p{
+        display: none;
+
+    }
+    .about h1{
+        font-size: 28px;
+    }
+    
+    
+
+  }
